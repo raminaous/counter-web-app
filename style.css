@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: white;
+}
+
+main{
+    padding: 3rem 2rem;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #222;
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+}
+
+.counter {
+    background-color: #222;
+    padding: 7rem;
+    border-radius: 1rem;
+    color: white;
+}
+
+.counter-value {
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.counter-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -0.5rem;
+}
+
+.counter-controls button{
+    margin: 0 0.5rem;
+}
+
+button{
+    color: red;
+    background: none;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+    
+}
+
+button span {
+    display: block;
+    transition: 0.4s ease-out
+}
+
+button[data-action="reset"] {
+    color: #fff;
+    opacity: 0.5;
+}
+
+button[data-action="increase"] {
+    color: green;
+    opacity: 0.5;
+}
+
+button[data-action="reset"] {
+    color: #fff;
+    opacity: 1;
+}
+
+.save{
+    margin-top: 2rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.save button {
+    color: #222;
+}
+button:active {
+    transform: scale(1.1);
+}
